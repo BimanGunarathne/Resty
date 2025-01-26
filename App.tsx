@@ -1,6 +1,7 @@
 import { Platform, SafeAreaView, Text} from 'react-native';
 import React, { useEffect } from 'react';
 import SplashScreen from 'react-native-splash-screen';
+import "./global.css";
 
 const App = () => {
   useEffect(()=>{
@@ -10,7 +11,7 @@ const App = () => {
   }, []);
   return (
     <SafeAreaView>
-      <Text className="text-right">Home</Text>
+      <Text>Home</Text>
     </SafeAreaView>
   );
 };
