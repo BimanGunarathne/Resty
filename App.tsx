@@ -10,7 +10,7 @@ const App = () => {
   }, []);
   return (
     <SafeAreaView>
-      <Text>Home</Text>
+      <Text className="text-right">Home</Text>
     </SafeAreaView>
   );
 };
