@@ -13,9 +13,7 @@ const App = () => {
     }, 1000);
     return () => clearTimeout(timeout);
   }, []);
-  return (
-    <HomeScreen />
-  );
+  return <HomeScreen/>;
 };
 
 export default App;
