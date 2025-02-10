@@ -13,7 +13,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
     <SafeAreaProvider>
       <SafeAreaView>
         <View className="p-5">
-          <Searchbar className='bg-[#f5f5f5]' placeholder="Search for menus, restaurants and hotels" onChangeText={setSearchQuery} value={searchQuery} icon="magnify"/>
+          <Searchbar className="bg-[#f5f5f5] rounded-full" placeholder="Search for menus, restaurants and hotels" onChangeText={setSearchQuery} value={searchQuery} icon="magnify"/>
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
