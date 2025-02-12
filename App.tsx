@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import "./global.css";
 import HomeScreen from './src/screens/HomeScreen';
+import { PaperProvider } from 'react-native-paper';
 
 const App = () => {
   useEffect(()=>{
@@ -13,7 +14,11 @@ const App = () => {
     }, 1000);
     return () => clearTimeout(timeout);
   }, []);
-  return <HomeScreen/>;
+  return (
+  <PaperProvider>
+    <HomeScreen/>
+  </PaperProvider>
+  );
 };
 
 export default App;
